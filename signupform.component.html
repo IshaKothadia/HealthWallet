@@ -1,0 +1,43 @@
+
+    <div class="signup-form">
+        <form [formGroup]="registrationForm">
+            <h2>Sign Up</h2>
+        <p>Please fill in this form to create an account!</p>
+        <hr>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col"><input type="text" formControlName="firstname"
+                        class="form-control" placeholder="First Name"></div>
+                    <div class="col"><input type="text" formControlName="lastname" 
+                        class="form-control" placeholder="Last Name"></div>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label>Username</label>
+                <input placeholder="Username" formControlName="username" type="text" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input placeholder="Eg. abc@gmail.com"  type="email" class="form-control">
+            </div>
+        
+            <div class="form-group">
+                <label>Password</label>
+                <input formControlName="password" type="password" class="form-control">
+            </div>
+        
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input formControlName="confirmPassword" type="password" class="form-control">
+            </div>
+        
+            <div class="form-group">
+                <button class="btn btn-primary btn-lg" type="submit">
+                    Registor
+                </button>
+            </div>
+        </form>
+        <div class="hint-text">Already have an account? <a href="#">Login here</a></div>
+</div>    
