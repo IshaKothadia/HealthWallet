@@ -1,0 +1,68 @@
+.form-control {
+	height: 41px;
+	background: #f2f2f2;
+	box-shadow: none !important;
+	border: none;
+}
+
+.form-control:focus {
+	background: #e2e2e2;
+}
+.form-control, .btn {        
+    border-radius: 3px;
+}
+
+
+
+.login-form {
+	width: 500px;
+	margin: 50px auto;
+}
+.login-form form {
+	color: #999;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	background: #fff;
+	box-shadow: 0px 2px 2px  rgba(0, 0, 0, 0.3);
+	padding: 30px;
+}
+ label{
+     color: #333;
+     font-weight: bold;
+ }
+ .login-form h2  {
+	color: #333;
+	font-weight: bold;
+	margin-top: 0;
+}
+
+.login-form .form-group {
+	margin-bottom: 20px;
+}
+.login-form .btn {        
+	font-size: 16px;
+	font-weight: bold;
+    border: none;
+    align-content:center;
+    margin: auto;
+    
+	min-width: 140px;
+}
+// .login-form , .login-form .btn:focus {
+// 	background: #2389cd !important;
+// 	outline: none;
+// }
+// .login-form a {
+// 	color: #3b7592;
+// 	text-decoration: underline;
+// }
+// .login-form a:hover {
+// 	text-decoration: none;
+// }
+// .login-form form a {
+// 	color: #3598dc;
+// 	text-decoration: none;
+// }	
+// .login-form form a:hover {
+// 	text-decoration: underline;
+// }
