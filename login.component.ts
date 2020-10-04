@@ -8,18 +8,23 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private formBuilder : FormBuilder) { }
+  email : string;
+  password : string;
+  loginform: any;
 
   
-  Loginform;
+
+  constructor() { }
+
+ 
   ngOnInit(): void {
-    this.Loginform = this.formBuilder.group({
-      email : ['',Validators.required],
-      password : ['',Validators.required]
-    })
   }
-  onSubmit(){
-  console.log(this.Loginform.value);
+  onSubmit(value){
+    console.log(value)
   }
 
+  
+
+  
+  
 }
