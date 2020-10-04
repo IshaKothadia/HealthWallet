@@ -8,23 +8,21 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 })
 export class SignupformComponent implements OnInit {
 
-  // registrationForm = new FormGroup({
-  //   username : new FormControl('Vaman'),
-  //   password : new FormControl(''),
-  //   confirmPassword : new FormControl('')
-  // });
+  firstname : string;
+  lastname : string;
+  username :string;
+  phone : number;
+  password : string;
+  email: string;
+  confirmpassword : string;
+  age : number;
+  registerform: any;
 
-  constructor(private fb: FormBuilder) { }
-
-  registrationForm = this.fb.group({
-    firstname :[''],
-    lastname : [''],
-    username : [''],
-    password: [''],
-    confirmPassword: [''] 
-  });
   ngOnInit(): void {
 
   }
 
+  onSubmit(value){
+    console.table(value);
+  }
 }
